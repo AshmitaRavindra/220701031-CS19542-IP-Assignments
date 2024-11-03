@@ -1,0 +1,59 @@
+/* style.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h2, h3 {
+    color: #007BFF;
+}
+
+/* Navbar */
+.navbar {
+    margin-bottom: 20px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+/* Carousel */
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+/* Blog Post */
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+}
+
+/* Form Styles */
+.form-group input {
+    border-radius: 20px;
+}
+
+.btn {
+    border-radius: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar-nav {
+        margin-top: 10px;
+    }
+    .card {
+        margin-bottom: 20px;
+    }
+}
