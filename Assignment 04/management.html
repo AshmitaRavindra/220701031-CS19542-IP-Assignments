@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Management</title>
+</head>
+<body>
+    <h1>Game Management</h1>
+    <button id="reset-score">Reset Score</button>
+    <p>Current Score: <span id="display-score">0</span></p>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Assume we are using local storage to manage score
+        $(document).ready(function () {
+            function updateScoreDisplay() {
+                const score = localStorage.getItem("score") || 0;
+                $("#display-score").text(score);
+            }
+
+            $("#reset-score").on("click", function () {
+                localStorage.setItem("score", 0);
+                updateScoreDisplay();
+            });
+
+            updateScoreDisplay();
+        });
+    </script>
+</body>
+</html>
